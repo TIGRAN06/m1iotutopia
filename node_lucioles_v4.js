@@ -74,9 +74,19 @@ async function v0(){
 	//===============================================
 	// Connexion au broker MQTT distant
 	//
-	const mqtt_url = 'http://test.mosquitto.org'
+	//const mqtt_url = 'http://test.mosquitto.org'
+	////const mqtt_url = 'http://broker.hivemq.com'
+	//var client_mqtt = mqtt.connect(mqtt_url);
+	const mqtt_url = 'http://test.mosquitto.org:8883'
+	var CAfile = fs.readFileSync('mosquitto.org.crt');
 	//const mqtt_url = 'http://broker.hivemq.com'
-	var client_mqtt = mqtt.connect(mqtt_url);
+	//var client_mqtt = mqtt.connect({host:'test.mosquitto.org' ,port:'8883', ca: CAfile});
+	var options = {
+		port: 8883,
+		rejectUnauthorized : true,
+		ca: CAfile,
+	  };
+	  var client_mqtt  = mqtt.connect('mqtts://test.mosquitto.org', options);
 	
 	//===============================================
 	// Des la connexion, le serveur NodeJS s'abonne aux topics MQTT 
