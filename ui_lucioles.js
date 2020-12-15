@@ -55,12 +55,11 @@ function init() {
 
     //=== Gestion de la flotte d'ESP =================================
     var which_esps = [
-    "80:7D:3A:FD:C2:F8", 
-    "80:7D:3A:FD:E8:E8",
-    "80:7D:3A:FD:D7:DC"
-//	"80:7D:3A:FD:E8:E8"
-//  "80:7D:3A:FD:C9:44"
-    ]
+        "80:7D:3A:FD:C2:F8", 
+        "80:7D:3A:FD:E8:E8",
+        "80:7D:3A:FD:D7:DC"
+        ]
+        
     
     for (var i = 0; i < which_esps.length; i++) {
 	process_esp(which_esps, i)
