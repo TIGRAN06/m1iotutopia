@@ -1,0 +1,27 @@
+{
+  "engines": {
+    "node": "10.19.0"
+  },
+  "name": "m1iotutopia",
+  "version": "1.0.0",
+  "description": "This is description for Health Check",
+  "main": "node_lucioles_v4.js",
+  "scripts": {
+    "start": "node node_lucioles_v4.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TIGRAN06/m1iotutopia.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongodb": "^3.6.3",
+    "mqtt": "^4.2.6"
+  },
+  "bugs": {
+    "url": "https://github.com/TIGRAN06/m1iotutopia/issues"
+  },
+  "homepage": "https://github.com/TIGRAN06/m1iotutopia#readme"
+}
