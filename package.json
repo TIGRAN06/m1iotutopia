@@ -5,9 +5,9 @@
   "name": "m1iotutopia",
   "version": "1.0.0",
   "description": "This is description for Health Check",
-  "main": "node_lucioles_v4.js",
+  "main": "node_lucioles_cloud.js",
   "scripts": {
-    "start": "node node_lucioles_v4.js"
+    "start": "node node_lucioles_cloud.js"
   },
   "repository": {
     "type": "git",
